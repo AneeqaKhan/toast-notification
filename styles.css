@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+button {
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 5px;
+  color: darkblue;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.toast {
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 10px;
+  color: rgb(0, 0, 58);
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
